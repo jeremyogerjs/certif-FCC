@@ -1,0 +1,84 @@
+body,input,select{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: 
+    linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#title,#description{
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+}
+#resume{
+    padding: 1em 0;
+}
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #292948;
+    color: white;
+    padding: 2em;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: .2em;
+}
+
+#control{
+    display: flex;
+    font-size: 1.1em;
+    padding: .2em 0;
+}
+#control input{
+    width: 2em;
+    height: 1.4em;
+}
+
+#email, 
+#name,#number,#dropdown{
+    padding: .5em;
+    border-radius: .2em;
+    border-color: transparent;
+}
+#name-label,#email-label,#number-label{
+    padding: 1.4em 0 .5em 0;
+}
+
+#control-radio,#control-checkbox,#control-select,#control-text{
+    padding: 1.4em 0 0 0;
+}
+#control-select,#control-text{
+    display: flex;
+    flex-direction: column;
+}
+#control-select #dropdown option:first-of-type{
+    opacity: .5;
+}
+#control-radio span,#control-checkbox span{
+    font-size: 1em;
+}
+
+input[type='submit']{
+    background-color: #37AF65;
+    text-align: center;
+    color: white;
+    padding: .5em;
+    border-style: unset;
+    border: none;
+    border-radius: .2em;
+    margin: 1em 0 0 0;
+}

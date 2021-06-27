@@ -1,0 +1,141 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #EEEEEE;
+}
+
+#header img{
+    width: 16em ;
+    
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: #333;
+}
+#nav-bar ul li:nth-child(2){
+    padding: 0 10em;
+}
+#nav-bar ul li:last-child{
+    padding-right: 5em;
+}
+#main{
+    width: 60%;
+    margin: 0 auto;
+    padding: 3em 0 0 0;
+}
+#form-control{
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+#form-control h1{
+    font-weight: bolder;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form input:first-of-type{
+    padding: .3em;
+    width: 50%;
+}
+#submit{
+    width: max-content;
+    border: none;
+    background-color: #F1C40F;
+    color: #333;
+    text-transform: uppercase;
+    padding: .2em;
+    margin-top: .5em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.fas{
+    color: #FF8C00;
+}
+#services{
+    width: max-content;
+    margin: 0 auto;
+}
+#services span:first-of-type{
+    width: 15%;
+}
+.service-card{
+    display: flex;
+    align-items: center;
+}
+.service-card div{
+    padding-left: 20px;
+}
+#video{
+    width: 40em;
+    height: 20em;
+    display: flex;
+    margin: 2em auto;
+    border: none;
+}
+#products{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2em auto;
+}
+.product-card{
+    border:#333 1px solid;
+    text-align: center;
+    width: 30%;
+    
+}
+.product-card div:first-of-type{
+    background-color: #DDDDDD;
+    padding:1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.product-card p:first-of-type{
+    font-weight: bold;
+    font-size: 25px;
+}
+.product-card button{
+    background-color: #F1C40F;
+    border: none;
+    padding: .5em 1em;
+    font-size: 18px;
+    margin: 0 0 1em 0;
+    cursor: pointer;
+}
+.product-card button:hover{
+    background-color: #FF8C00;
+}
+footer{
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer span{
+    padding: .2em 2em 1em 0;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    padding-right: 2em;
+}
+footer ul li:nth-child(2){
+    padding: 0 2em;
+}
+footer span{
+    opacity: .5;
+    font-size: 15px;
+}
